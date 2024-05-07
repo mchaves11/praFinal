@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRA Final</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#">Início</a>
+        <a href="#ufcd">UFCD's</a>
+        <a href="#galeria">Galeria</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="sobre.html">Sobre</a>
+    </div>
+
+    <div id="imagem_fundo">
+        <div>
+            <h1 class="slogan">Programador/a de Informática</h1>
+        </div>
+    </div>
+
+    <h2 id="ufcd" class="titulo">Lista de UFCD's</h2>
+
+    <div class="center-container">
+        <div class="pdf-container">
+            <div class="pdf-column">
+                <a href="listaPra/0769 (1).pdf">0769 - Arquitetura interna do computador (1)</a><br>
+                <a href="listaPra/0770 (2).pdf">0770 - Dispositivos e periféricos (2)</a><br>
+                <a href="listaPra/0771 (3).pdf">0771 - Conexões de rede (3)</a><br>
+                <a href="listaPra/0797 (4).pdf">0797 - Sistemas operativos - tipologias (4)</a><br>
+                <a href="listaPra/0798 (5).pdf">0798 - Utilitários (5)</a><br>
+                <a href="listaPra/0799 (6).pdf">0799 - Sistemas de rede local (6)</a><br>
+                <a href="listaPra/0800 (7).pdf">0800 - Serviços adicionais de rede (7)</a><br>
+                <a href="listaPra/0801 (8).pdf">0801 - Administração de redes locais (8)</a><br>
+                <a href="listaPra/0802 (9).pdf">0802 - Processamento computacional (9)</a><br>
+                <a href="listaPra/7846 (10).pdf">7846 - Informática - noções básicas (10)</a><br>
+                <a href="listaPra/0804 (11).pdf">0804 - Algoritmos (11)</a><br>
+                <a href="listaPra/0805 (12).pdf">0805 - Estruturas de dados (12)</a><br>
+                <a href="listaPra/0806 (13).pdf">0806 - Princípios metodológicos de programação (13)</a><br>
+                <a href="listaPra/0809 (14).pdf">0809 - Programação em C/C++ - fundamentos (14)</a><br>
+                <a href="listaPra/0810 (15).pdf">0810 - Programação em C/C++ - avançada (15)</a><br>
+            </div>
+            <div class="pdf-column">
+                <a href="listaPra/0811 (16).pdf">0811 - Análise de sistemas (16)</a><br>
+                <a href="listaPra/10788 (17).pdf">10788 - Fundamentos da linguagem SQL (17)</a><br>
+                <a href="listaPra/3933 (18).pdf">3933 - Adm. de bases de dados para programadores (18)</a><br>
+                <a href="listaPra/0816 (19).pdf">0816 - Programação de sistemas distribuídos - JAVA (19)</a><br>
+                <a href="listaPra/.pdf">20</a><br>
+                <a href="listaPra/3935 (21).pdf">3935 - Programação em C# (21)</a><br>
+                <a href="listaPra/10792 (22).pdf">10792 - Programação ASP.Net Core MVC (22)</a><br>
+                <a href="listaPra/10793 (23).pdf">10793 - Fundamentos de Python (23)</a><br>
+                <a href="listaPra/10794 (24).pdf">10794 - Programação avançada com Python (24)</a><br>
+                <a href="listaPra/.pdf">25</a><br>
+                <a href="listaPra/.pdf">26</a><br>
+                <a href="listaPra/10871 (b11).pdf">10871 - Introdução à Administração de Sistemas (b11)</a><br>
+                <a href="listaPra/10872 (b12).pdf">10872 - Administração de Sistemas (b12)</a><br>
+                <a href="listaPra/.pdf">b13</a><br>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width: 90%;">
+
+    <h2 id="galeria" class="titulo">Galeria</h2>
+
+    <div class="slideshow" style="position: relative;">
+        <img class="imagensSlideshow" src="imagens/1.jpg" id="slideshow"
+            style="max-width: 65%; height: auto; border: 2px solid #0A2351">
+        <div id="legenda" class="legendas"></div>
+        <button onclick="anteriorImagem()" class="slideshow-botao slideshow-botao-ant">&#10094; Anterior</button>
+        <button onclick="proximaImagem()" class="slideshow-botao slideshow-botao-prox">Próxima &#10095;</button>
+    </div>
+
+    <script>
+        const imagens = ['imagens/1.jpg', 'imagens/2.jpg', 'imagens/3.jpg', 'imagens/4.jpg', 'imagens/5.jpg', 'imagens/6.jpg', 'imagens/7.jpg'];
+        const legendas = ['HTML no Notepad++', 'Cisco Packet Tracer', 'Python no Visual Studio', 'SQL no SQL Server', 'JAVA no NetBeans', 'Aplicação em Python', 'Página web com base de dados']
+        let indexAtual = 0;
+
+        function proximaImagem() {
+            indexAtual = (indexAtual + 1) % imagens.length;
+            atualizarImagemLegenda();
+        }
+
+        function anteriorImagem() {
+            indexAtual = (indexAtual - 1 + imagens.length) % imagens.length;
+            atualizarImagemLegenda();
+        }
+
+        function atualizarImagemLegenda() {
+            document.getElementById('slideshow').src = imagens[indexAtual];
+            document.getElementById('legenda').textContent = legendas[indexAtual];
+        }
+
+        atualizarImagemLegenda();
+
+        setInterval(proximaImagem, 9000);
+    </script>
+
+    <div id="imagem_fundo2">
+        <div>
+            <h1 class="slogan">EFA PRO 24/2023</h1>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 - PRA Final - <a
+                style="color: black; background-color: limegreen; padding: 10px; border-radius: 10px; "
+                href="sobre.html">Sobre</a> - Miguel Chaves - Nº: 6182149</p>
+    </div>
+
+</body>
+
+</html>
