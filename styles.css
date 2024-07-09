@@ -1,0 +1,133 @@
+body {
+    background-color: #DFDFFF;
+    font-family: Arial, sans-serif;
+}
+
+.custom-navbar {
+    background-color: #0A2351;
+    border-bottom: 2px solid limegreen;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.nav-link {
+    color: white !important;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid limegreen;
+}
+
+.custom-dropdown-menu {
+    background-color: #0A2351;
+    border: 2px solid limegreen;
+}
+
+.custom-dropdown-item {
+    color: white;
+}
+
+.custom-dropdown-item:hover {
+    background-color: limegreen;
+    color: black;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20%;
+    right: 0%;
+    background-color: limegreen;
+    color: black;
+}
+
+.titulo {
+    color: #0A2351;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.coluna-pdf {
+    background-color: #0A2351;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.coluna-pdf a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+}
+
+.carousel {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #0A2351;
+}
+
+.carousel-caption {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.carousel .carousel-indicators li {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.carousel .carousel-indicators li.active {
+    width: 1vw;
+    height: 1vw;
+    background-color: limegreen;
+}
+
+.carousel-control-next-icon {
+    background-image: url(imagens/right-arrow.png);
+    width: 5vw;
+    height: 5vw;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(imagens/left-arrow.png);
+    width: 5vw;
+    height: 5vw;
+}
+
+.custom-footer {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.custom-btn-pdf {
+    background-color: #0A2351;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.custom-btn-pdf:hover {
+    background-color: limegreen;
+    color: black;
+}
+
+.custom-btn {
+    background-color: #0A2351;
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: limegreen;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
